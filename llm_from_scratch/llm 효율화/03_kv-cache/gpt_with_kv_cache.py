@@ -1,6 +1,90 @@
 # This file collects all the relevant code that we covered thus far
 # throughout Chapters 3-4.
 # This file can be run as a standalone script.
+# =============================================================================
+# gpt_ch04.py vs gpt_with_kv_cache.py 비교
+# =============================================================================
+#
+# gpt_ch04.py  : KV 캐시 없는 기본 GPT 구현 (이 파일)
+# gpt_with_kv_cache.py : KV 캐시를 추가한 최적화 버전
+#
+# -----------------------------------------------------------------------------
+# 1. MultiHeadAttention.__init__() — 캐시 버퍼
+# -----------------------------------------------------------------------------
+# [gpt_ch04.py]    없음
+#
+# [gpt_with_kv_cache.py]
+#   self.register_buffer("cache_k", None, persistent=False)
+#   self.register_buffer("cache_v", None, persistent=False)
+#   self.ptr_current_pos = 0   # 현재 시퀀스 위치 포인터
+#
+# -----------------------------------------------------------------------------
+# 2. MultiHeadAttention.forward() — 캐시 읽기/쓰기 및 마스크 처리
+# -----------------------------------------------------------------------------
+# [gpt_ch04.py]
+#   def forward(self, x):
+#       keys = self.W_key(x)                               # 매번 전체 재계산
+#       mask_bool = self.mask.bool()[:num_tokens, :num_tokens]  # 고정 마스크
+#
+# [gpt_with_kv_cache.py]
+#   def forward(self, x, use_cache=False):                 # 파라미터 추가
+#       keys_new = self.W_key(x)                           # 새 토큰만 계산
+#       if use_cache:
+#           self.cache_k = torch.cat([self.cache_k, keys_new], dim=1)
+#           keys, values = self.cache_k, self.cache_v      # 캐시에서 참조
+#       # 마스크를 위치 포인터 기반으로 동적 슬라이싱
+#       mask_bool = self.mask.bool()[
+#           self.ptr_current_pos : self.ptr_current_pos + num_tokens_Q,
+#           :num_tokens_K
+#       ]
+#       self.ptr_current_pos += num_tokens_Q
+#
+# -----------------------------------------------------------------------------
+# 3. GPTModel — 블록 컨테이너와 위치 임베딩
+# -----------------------------------------------------------------------------
+# 항목             | gpt_ch04.py              | gpt_with_kv_cache.py
+# ------------------|--------------------------|------------------------------
+# 블록 컨테이너     | nn.Sequential            | nn.ModuleList
+# 이유             | 순차 자동 실행            | use_cache 인자를 각 블록에 전달
+# 위치 임베딩      | arange(seq_len) 항상 0부터 | arange(current_pos, current_pos+seq_len)
+# 캐시 초기화 메서드| 없음                     | reset_kv_cache() 추가
+#
+# [gpt_ch04.py]
+#   self.trf_blocks = nn.Sequential(...)
+#   pos_embeds = self.pos_emb(torch.arange(seq_len))   # 항상 [0,1,2,3,...]
+#   x = self.trf_blocks(x)
+#
+# [gpt_with_kv_cache.py]
+#   self.trf_blocks = nn.ModuleList(...)
+#   # 캐시 사용 시 위치를 이어서 계산: 프롬프트 후 [4],[5],[6],...
+#   pos_ids = torch.arange(self.current_pos, self.current_pos + seq_len)
+#   self.current_pos += seq_len
+#   for blk in self.trf_blocks:
+#       x = blk(x, use_cache=use_cache)                # 각 블록에 인자 전달
+#
+# -----------------------------------------------------------------------------
+# 4. 생성 함수 — 핵심 동작 차이
+# -----------------------------------------------------------------------------
+# [gpt_ch04.py] generate_text_simple()
+#   매 스텝: [Hello, I, am, a, very] 전체 → 모델 → logits  (n 토큰 계산)
+#   다음 스텝: [Hello, I, am, a, very, good] 전체 → 모델 → logits (n+1 토큰)
+#   → O(n²) 연산
+#
+# [gpt_with_kv_cache.py] generate_text_simple_cached()
+#   1단계: [Hello, I, am] → 모델(캐시 저장) → logits
+#   매 스텝: [새토큰 1개] → 모델(캐시 참조) → logits  (1 토큰만 계산)
+#   → O(n) 연산
+#
+# -----------------------------------------------------------------------------
+# 5. 캐시 사용 vs 미사용 성능 비교
+# -----------------------------------------------------------------------------
+# 항목           | 캐시 사용         | 캐시 미사용
+# ---------------|-------------------|-------------------
+# 모델 입력      | 새 토큰 1개       | 전체 시퀀스
+# K,V 계산       | 새 토큰만         | 매번 전체 재계산
+# 시간 복잡도    | O(n)              | O(n²)
+# 메모리         | 캐시 저장 필요    | 추가 메모리 없음
+# =============================================================================
 
 import time
 import tiktoken
