@@ -1,0 +1,32 @@
+1. 개발환경 리셋 (약 15분 내외 소요)
+   1) C:\work\share_folder_addresses 파일 더블클릭
+   2) LANGUAGE 밑에 있는 폴더 주소 복사
+   3) 탐색기 실행 후 주소창에 붙여넣기 후 엔터
+   4) Env 폴더 안의
+       Remove_And_Rollback_env_aias_test 파일 더블 클릭하여 실행
+
+-------------------------------------------------------------------------------------------
+
+2. 실습 및 강의 교안 복사를 위한 폴더 생성
+   1) 탐색기 실행
+   2) C:\ 아래에 Workspace 폴더 생성하기
+
+3. 실습 및 강의 교안 복사
+   1) C:\work\share_folder_addresses 파일 더블클릭
+   2) VISION 밑에 있는 폴더 주소 복사
+   3) 탐색기 실행 후 주소창에 붙여넣기 후 엔터
+   4) 전체 파일 선택 후 복사
+   5) C:\Workspace 로 이동 후 붙여넣기
+
+-------------------------------------------------------------------------------------------
+
+4. 개발환경 실행
+   1) 윈도우 검색창에서 Anaconda PowerShell Prompt 검색 후 실행
+   2) (base) PS C:\Windows\system32> cd c:\Workspace
+   3) (base) PS C:\Workspace> conda activate env_aias_test
+   4) (env_aias_test) PS C:\Workspace> jupyter-lab
+
+5. 실습 교안 실행
+   1) Kernel 탭 -> Shut Down All Kernels
+   2) 파일 브라우저 클릭 (폴더 모양)
+   3) 해당 파일 더블 클릭하여 실행
