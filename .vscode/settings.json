@@ -1,0 +1,5 @@
+{
+    "python.autoComplete.extraPaths": [
+        "C:\\Users\\swsuser-k21\\anaconda3\\envs\\env_aias_test\\lib\\site-packages"
+    ]
+}
