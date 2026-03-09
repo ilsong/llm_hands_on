@@ -1,0 +1,100 @@
+New York City : https://en.wikipedia.org/wiki/New_York_City
+London : https://en.wikipedia.org/wiki/London
+Paris : https://en.wikipedia.org/wiki/Paris
+Tokyo : https://en.wikipedia.org/wiki/Tokyo
+Berlin : https://en.wikipedia.org/wiki/Berlin
+Shanghai : https://en.wikipedia.org/wiki/Shanghai
+Los Angeles : https://en.wikipedia.org/wiki/Los_Angeles
+Istanbul : https://en.wikipedia.org/wiki/Istanbul
+Sydney : https://en.wikipedia.org/wiki/Sydney
+Seoul : https://en.wikipedia.org/wiki/Seoul
+Saint Petersburg : https://en.wikipedia.org/wiki/Saint_Petersburg
+Mumbai : https://en.wikipedia.org/wiki/Mumbai
+Beijing : https://en.wikipedia.org/wiki/Beijing
+Leipzig : https://en.wikipedia.org/wiki/Leipzig
+Toronto : https://en.wikipedia.org/wiki/Toronto
+Rio de Janeiro : https://en.wikipedia.org/wiki/Rio_de_Janeiro
+Mexico City : https://en.wikipedia.org/wiki/Mexico_City
+Budapest : https://en.wikipedia.org/wiki/Budapest
+Barcelona : https://en.wikipedia.org/wiki/Barcelona
+Moscow : https://en.wikipedia.org/wiki/Moscow
+Vancouver : https://en.wikipedia.org/wiki/Vancouver
+Dublin : https://en.wikipedia.org/wiki/Dublin
+Athens : https://en.wikipedia.org/wiki/Athens
+Derry : https://en.wikipedia.org/wiki/Derry
+Bristol : https://en.wikipedia.org/wiki/Bristol
+Venice : https://en.wikipedia.org/wiki/Venice
+Reykjavik : https://en.wikipedia.org/wiki/Reykjavik
+Chicago : https://en.wikipedia.org/wiki/Chicago
+Adelaide : https://en.wikipedia.org/wiki/Adelaide
+Dubai : https://en.wikipedia.org/wiki/Dubai
+Auckland : https://en.wikipedia.org/wiki/Auckland
+Benicia : https://en.wikipedia.org/wiki/Benicia,_California
+Madrid : https://en.wikipedia.org/wiki/Madrid
+Hershey, Pennsylvania : https://en.wikipedia.org/wiki/Hershey,_Pennsylvania
+Cape Town : https://en.wikipedia.org/wiki/Cape_Town
+Hanoi : https://en.wikipedia.org/wiki/Hanoi
+Jakarta : https://en.wikipedia.org/wiki/Jakarta
+Karachi : https://en.wikipedia.org/wiki/Karachi
+Kuala Lumpur : https://en.wikipedia.org/wiki/Kuala_Lumpur
+Managua : https://en.wikipedia.org/wiki/Managua
+Nairobi : https://en.wikipedia.org/wiki/Nairobi
+Oslo : https://en.wikipedia.org/wiki/Oslo
+Panama City : https://en.wikipedia.org/wiki/Panama_City
+Quebec City : https://en.wikipedia.org/wiki/Quebec_City
+San Diego : https://en.wikipedia.org/wiki/San_Diego
+Sarajevo : https://en.wikipedia.org/wiki/Sarajevo
+Sofia : https://en.wikipedia.org/wiki/Sofia
+Stockholm : https://en.wikipedia.org/wiki/Stockholm
+Suwon : https://en.wikipedia.org/wiki/Suwon
+Tashkent : https://en.wikipedia.org/wiki/Tashkent
+Tehran : https://en.wikipedia.org/wiki/Tehran
+Tbilisi : https://en.wikipedia.org/wiki/Tbilisi
+Ulaanbaatar : https://en.wikipedia.org/wiki/Ulaanbaatar
+Warsaw : https://en.wikipedia.org/wiki/Warsaw
+Jerusalem : https://en.wikipedia.org/wiki/Jerusalem
+Yekaterinburg : https://en.wikipedia.org/wiki/Yekaterinburg
+Zagreb : https://en.wikipedia.org/wiki/Zagreb
+Zimbabwe : https://en.wikipedia.org/wiki/Zimbabwe
+Zurich : https://en.wikipedia.org/wiki/Zurich
+Almaty : https://en.wikipedia.org/wiki/Almaty
+Amsterdam : https://en.wikipedia.org/wiki/Amsterdam
+Antananarivo : https://en.wikipedia.org/wiki/Antananarivo
+Astrakhan : https://en.wikipedia.org/wiki/Astrakhan
+Baku : https://en.wikipedia.org/wiki/Baku
+Bangkok : https://en.wikipedia.org/wiki/Bangkok
+Varna, Bulgaria : https://en.wikipedia.org/wiki/Varna,_Bulgaria
+Belize City : https://en.wikipedia.org/wiki/Belize_City
+Belgrade : https://en.wikipedia.org/wiki/Belgrade
+Bergen : https://en.wikipedia.org/wiki/Bergen
+Vilnius : https://en.wikipedia.org/wiki/Vilnius
+Bratislava : https://en.wikipedia.org/wiki/Bratislava
+Brussels : https://en.wikipedia.org/wiki/Brussels
+Bucharest : https://en.wikipedia.org/wiki/Bucharest
+Cancun : https://en.wikipedia.org/wiki/Cancun
+Castries : https://en.wikipedia.org/wiki/Castries
+Cebu : https://en.wikipedia.org/wiki/Cebu
+Chapel Hill, North Carolina : https://en.wikipedia.org/wiki/Chapel_Hill,_North_Carolina
+Chennai : https://en.wikipedia.org/wiki/Chennai
+Colombo : https://en.wikipedia.org/wiki/Colombo
+Córdoba, Spain : https://en.wikipedia.org/wiki/C%C3%B3rdoba,_Spain
+Dakar : https://en.wikipedia.org/wiki/Dakar
+Dar es Salaam : https://en.wikipedia.org/wiki/Dar_es_Salaam
+Delhi : https://en.wikipedia.org/wiki/Delhi
+Denver : https://en.wikipedia.org/wiki/Denver
+Dresden : https://en.wikipedia.org/wiki/Dresden
+Durham, North Carolina : https://en.wikipedia.org/wiki/Durham,_North_Carolina
+Edinburgh : https://en.wikipedia.org/wiki/Edinburgh
+Edmonton : https://en.wikipedia.org/wiki/Edmonton
+Eskisehir : https://en.wikipedia.org/wiki/Eskisehir
+Fairbanks : https://en.wikipedia.org/wiki/Fairbanks,_Alaska
+Faroe Islands : https://en.wikipedia.org/wiki/Faroe_Islands
+Fiji : https://en.wikipedia.org/wiki/Fiji
+Florence : https://en.wikipedia.org/wiki/Florence
+Frankfurt : https://en.wikipedia.org/wiki/Frankfurt
+Fresno, California : https://en.wikipedia.org/wiki/Fresno,_California
+Pune : https://en.wikipedia.org/wiki/Pune
+Puerto Montt : https://en.wikipedia.org/wiki/Puerto_Montt
+Kelowna : https://en.wikipedia.org/wiki/Kelowna
+Granada : https://en.wikipedia.org/wiki/Granada
+Kota Kinabalu : https://en.wikipedia.org/wiki/Kota_Kinabalu

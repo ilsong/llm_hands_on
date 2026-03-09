@@ -1,0 +1,24 @@
+New York City : https://en.wikipedia.org/wiki/New_York_City
+London : https://en.wikipedia.org/wiki/London
+Paris : https://en.wikipedia.org/wiki/Paris
+Tokyo : https://en.wikipedia.org/wiki/Tokyo
+Berlin : https://en.wikipedia.org/wiki/Berlin
+Shanghai : https://en.wikipedia.org/wiki/Shanghai
+Los Angeles : https://en.wikipedia.org/wiki/Los_Angeles
+Istanbul : https://en.wikipedia.org/wiki/Istanbul
+Sydney : https://en.wikipedia.org/wiki/Sydney
+Seoul : https://en.wikipedia.org/wiki/Seoul
+Saint Petersburg : https://en.wikipedia.org/wiki/Saint_Petersburg
+Mumbai : https://en.wikipedia.org/wiki/Mumbai
+Beijing : https://en.wikipedia.org/wiki/Beijing
+Leipzig : https://en.wikipedia.org/wiki/Leipzig
+Toronto : https://en.wikipedia.org/wiki/Toronto
+Rio de Janeiro : https://en.wikipedia.org/wiki/Rio_de_Janeiro
+Mexico City : https://en.wikipedia.org/wiki/Mexico_City
+Budapest : https://en.wikipedia.org/wiki/Budapest
+Barcelona : https://en.wikipedia.org/wiki/Barcelona
+Moscow : https://en.wikipedia.org/wiki/Moscow
+Vancouver : https://en.wikipedia.org/wiki/Vancouver
+Dublin : https://en.wikipedia.org/wiki/Dublin
+Antananarivo : https://en.wikipedia.org/wiki/Antananarivo
+Suwon : https://en.wikipedia.org/wiki/Suwon
